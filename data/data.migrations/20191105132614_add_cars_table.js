@@ -5,7 +5,7 @@ exports.up = function(knex) {
       table.string('VIN',128).notNullable();
       table.string('Make',128).notNullable();
       table.string('Model', 128).notNullable();
-      table.string('Mileage', 128)
+      table.float('Mileage')
       table.string('TransmissionType',128);
       table.string('TitleStatus',128);
   })
